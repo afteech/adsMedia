@@ -153,6 +153,7 @@ public class AdNetwork {
                         });
                         AudienceNetworkInitializeHelper.initialize(activity);
                         final String sdkKey = AppLovinSdk.getInstance(activity).getSdkKey();
+                        AppLovinSdk.getInstance(activity).getSettings().setTestDeviceAdvertisingIds(Arrays.asList("1cce5ded-cd2f-489e-97be-cca078ea751b"));
                         Log.e(TAG, sdkKey);
 //                        if (!sdkKey.equals(appLovinSdkKey)) {
 //                            Log.e(TAG, "ERROR : Please update your applovin sdk key in the manifest file.");
@@ -214,6 +215,7 @@ public class AdNetwork {
                         });
                         AudienceNetworkInitializeHelper.initialize(activity);
                         final String sdkKey = AppLovinSdk.getInstance(activity).getSdkKey();
+                        AppLovinSdk.getInstance(activity).getSettings().setTestDeviceAdvertisingIds(Arrays.asList("1cce5ded-cd2f-489e-97be-cca078ea751b"));
                         if (!sdkKey.equals(appLovinSdkKey)) {
                             Log.e(TAG, "ERROR : Please update your applovin sdk key in the manifest file.");
                         }
